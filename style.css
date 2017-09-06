@@ -49,28 +49,6 @@
 }
 
 
-.video {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-    background-size: cover;
-}
-.framesContainer {
-	transition: none;
-}
-.frame {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background-size: cover;
-	transition: .2s;
-	opacity: 0;
-	display: none;
-}
 .contentHome, .contentContact {
 	height: 100%;
 	position: relative;
