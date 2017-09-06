@@ -272,7 +272,7 @@ function makedata(){
 			"icons_th.jpg"
 			,"Web Design"
 			,"visualdesign"
-			,"Web / Visual Design"
+			,"Web Design"
 			
 			//,"Illumina BaseSpace, a genomics cloud computing platform"
 			,""
