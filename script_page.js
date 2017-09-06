@@ -12,7 +12,7 @@ function getdata(){
 		
 		// for local testing
 		//$.getScript('data.js', function()
-		$.getScript('http://jlthing.com/data.js', function()
+		$.getScript('http://jlview.com/data.js', function()
 
 		{
 		    // script is now loaded and executed.
