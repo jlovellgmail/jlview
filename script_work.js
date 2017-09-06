@@ -49,7 +49,9 @@ function makeitems(){
 		.append("div").attr("class", "container")
 		.text(function(d){ return d.blurb; })
 		;
+	
 	// dummy item for alignment
+	/*
 	function isOdd(num) { return num % 2;}
 	if(isOdd(data.length)){
 		var item = 
@@ -57,6 +59,12 @@ function makeitems(){
 			.append("div").attr("class", "item small dummy")
 			;
 	}
+	*/
+	var element = d3.select(".workbody .content");
+	element.append("div").attr("class", "item small dummy");
+	element.append("div").attr("class", "item small dummy");
+	element.append("div").attr("class", "item small dummy");
+
 }
 
 
