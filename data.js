@@ -189,6 +189,9 @@ function makedata(){
 		contentlist.other = ""
 			+ img("images/page_images/raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
+			+ spacer
+			+ img("images/page_images/shirt_front.jpg")
+			+ caption("MAGA")
 			;
 		contentlist.rd = ""
 			+ img("images/page_images/keyart_rd_1600.jpg")
