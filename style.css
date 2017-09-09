@@ -1,3 +1,93 @@
+
+
+
+
+.animationtest {
+	background: rgba(0,0,0, .05);
+	width: 1000px;
+	min-height: 600px;
+	margin: 0 auto;
+	margin-top: 40px;
+	position: relative;
+}
+@keyframes example {
+    0% {
+    	left: 0;
+    	right: 100%;
+	    animation-timing-function: cubic-bezier( 0.55, 0.055, 0.675, 0.19 );
+    }
+    65% {
+    	left: 15%;
+    	right: 25%;
+	    animation-timing-function: cubic-bezier( 0.215, 0.61, 0.355, 1 );
+    }
+    75% {
+    	/*stay behind black*/
+    	left: 25%;
+    }
+    100% {
+    	left: 100%;
+    	right: 0;
+    }
+}
+@keyframes example2 {
+    0% {
+    	left: 0;
+    	right: 100%;
+	    animation-timing-function: cubic-bezier( 0.55, 0.045, 0.775, 0.39 );
+    }
+    75% {
+    	left: 15%;
+    	right: 45%;
+	    animation-timing-function: cubic-bezier( 0.325, 0.71, 0.355, 1 );
+    }
+    100% {
+    	left: 100%;
+    	right: 0;
+    }
+}
+.animatedelement {
+	left: 0;
+	right: 100%;
+
+	height: 100%;
+	min-width: 1px;
+	position: absolute;
+	background-color: red;
+	animation-name: example;
+	animation-duration: 1s;
+
+}
+.animatedelement2 {
+	left: 0;
+	right: 100%;
+
+	height: 100%;
+	min-width: 1px;
+	position: absolute;
+	background-color: black;
+	animation-name: example2;
+	animation-duration: 1s;
+	animation-delay: .02s;
+}
+.animatedelement3 {
+	left: 0;
+	right: 100%;
+
+	height: 100%;
+	min-width: 1px;
+	position: absolute;
+	background-color: gray;
+	animation-name: example2;
+	animation-duration: 1s;
+	animation-delay: .1s;
+}
+
+
+
+
+
+
 .contentHome, .contentContact {
 	height: 100%;
 	position: relative;
