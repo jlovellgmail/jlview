@@ -137,10 +137,19 @@ function makedata(){
 			+ img("images/page_images/hersheys_double.jpg")
 			+ spacer
 			+ img("images/page_images/hersheys_stage.jpg")
+			//-------------------------
+			+ spacer
+			+ text("Aramark Guest Chef Event", "heading")
+			+ text("Entrance and sponsor banners.")
+			+ spacermedium
+			+ img("images/page_images/event_aramark.jpg")
+			//-------------------------
 			+ spacer
 			+ text("Hershey's BlogHer Conference Suites", "heading")
 			+ text("Floor-to-ceiling environmental graphics.")
 			+ spacermedium
+			+ img("images/page_images/event_forest.jpg")
+			+ spacer
 			+ img("images/page_images/event_perspectivethreewalls.png")
 			+ spacer
 			+ img("images/page_images/event_rightwall.jpg")
@@ -154,13 +163,6 @@ function makedata(){
 			+ img("images/page_images/event_blogher2012_wallD_detail_1500.jpg")
 			+ spacer
 			+ img("images/page_images/event_blogher2012_wallE_2000.jpg")
-			+ spacer
-			+ img("images/page_images/event_forest.jpg")
-			+ spacer
-			+ text("Aramark Guest Chef Event", "heading")
-			+ text("Entrance and sponsor banners.")
-			+ spacermedium
-			+ img("images/page_images/event_aramark.jpg")
 			;
 		contentlist.oysters = ""
 			+ text("The problem: ", "heading")
@@ -221,14 +223,6 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"ad_th.jpg"
-			,"Ad Campaign"
-			,"ad"
-			,"Ad Campaign"
-			,"Spec ads for Health Warrior"
-			,contentlist.ads
-		);
-		add(
 			"rd_th.jpg"
 			,"Key Art"
 			,"rd"
@@ -270,18 +264,23 @@ function makedata(){
 			,"Using simulations of evolution to draw pictures"
 			,contentlist.gp
 		);
-		//------------------------------------
 		add(
 			"icons_th.jpg"
 			,"Web Design"
 			,"visualdesign"
 			,"Web Design"
-			
-			//,"Illumina BaseSpace, a genomics cloud computing platform"
 			,""
-
 			,contentlist.webdesign
 		);
+		add(
+			"ad_th.jpg"
+			,"Ad Campaign"
+			,"ad"
+			,"Ad Campaign"
+			,"Spec ads for Health Warrior"
+			,contentlist.ads
+		);
+		//------------------------------------
 		add(
 			"bags_th.jpg"
 			,"Product Photography"
