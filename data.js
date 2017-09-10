@@ -264,9 +264,9 @@ function makedata(){
 		);
 		add(
 			"icons_th.jpg"
-			,"Web Design"
+			,"Visual Design"
 			,"visualdesign"
-			,"Web Design"
+			,"Visual Design"
 			,""
 			,contentlist.webdesign
 		);
