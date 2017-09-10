@@ -150,14 +150,6 @@ body {
 .menuItem.active {
 	text-decoration: underline;
 }
-
-/*
-.menu .wrap div {
-	display: inline-block;
-	margin-right: 20px;
-}
-*/
-
 .menuItem a {
 	color: rgba(255,255,255, .7);
 }
