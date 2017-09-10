@@ -28,11 +28,11 @@ function makedata(){
 		var spacermedium = div("spacermedium");
 		var spacersmall = div("spacersmall");
 		contentlist.webdesign = ""
-			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
-			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
-			+ spacer
 			+ img("images/page_images/icons.jpg", "darkenImage")
 			+ caption("App icons, Illumina BaseSpace app store")
+			+ spacer
+			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
 			+ spacer
 			+ img("images/page_images/developerstats.jpg")
 			+ caption("Analytics dashboard, Illumina BaseSpace")
@@ -223,14 +223,13 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"rd_th.jpg"
-			,"Key Art"
-			,"rd"
-			,"Key Art"
-			,"Film branding"
-			,contentlist.rd
+			"hersheys_th.jpg"
+			,"Event Graphics"
+			,"event"
+			,"Event Graphics"
+			,""
+			,contentlist.event
 		);
-		//------------------------------------
 		add(
 			"titleist_th.jpg"
 			,"Brochure"
@@ -240,14 +239,21 @@ function makedata(){
 			,contentlist.titleist
 		);
 		add(
-			"hersheys_th.jpg"
-			,"Event Graphics"
-			,"event"
-			,"Event Graphics"
-			,""
-			,contentlist.event
+			"gp_th.jpg"
+			,"Experimental Rendering"
+			,"gp"
+			,"Experimental Digital Rendering"
+			,"Using simulations of evolution to draw pictures"
+			,contentlist.gp
 		);
-		//------------------------------------
+		add(
+			"rd_th.jpg"
+			,"Key Art"
+			,"rd"
+			,"Key Art"
+			,"Film branding"
+			,contentlist.rd
+		);
 		add(
 			"flowers_th.jpg"
 			,"Drawings"
@@ -255,14 +261,6 @@ function makedata(){
 			,"Drawings"
 			,""
 			,contentlist.drawings
-		);
-		add(
-			"gp_th.jpg"
-			,"Experimental Rendering"
-			,"gp"
-			,"Experimental Digital Rendering"
-			,"Using simulations of evolution to draw pictures"
-			,contentlist.gp
 		);
 		add(
 			"icons_th.jpg"
@@ -280,7 +278,6 @@ function makedata(){
 			,"Spec ads for Health Warrior"
 			,contentlist.ads
 		);
-		//------------------------------------
 		add(
 			"bags_th.jpg"
 			,"Product Photography"
@@ -289,7 +286,6 @@ function makedata(){
 			,"Leather handbags"
 			,contentlist.bags
 		);
-		//------------------------------------
 		add(
 			"oysters_th.jpg"
 			,"Data Visualization"
