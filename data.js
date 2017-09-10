@@ -122,13 +122,15 @@ function makedata(){
 			+ spacer
 			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
 			+ spacer
-			+ img("images/page_images/bags_grid.jpg")
+			+ img("images/page_images/bags_grid.jpg", "darkenImage")
+			/*
 			+ spacer
 			+ img("images/page_images/bags_IMG_8892_1200.jpg")
 			+ spacer
 			+ img("images/page_images/bags_2016-12-08-13.04.20_rt2_50_q9_1200.jpg")
 			+ spacer
 			+ img("images/page_images/bags_2016-11-28-13.21.43---drawstring-top-edge_1200.jpg")
+			*/
 			;
 		contentlist.event = ""
 			+ text("Hershey's Easter Event", "heading")
