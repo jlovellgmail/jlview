@@ -32,61 +32,6 @@ function makeitems(){
 		.selectAll(".item")
 		.data(data)
 		;
-
-
-		/*
-	var insideitems = 
-		items.enter()
-		.append("div").attr("class", "item")
-		.append("div").attr("class", "insideitem")
-		;
-		*/
-		/*
-	items = 
-		items.enter()
-		.append("div").attr("class", "item")
-		;
-		*/
-
-
-	// var links = insideitems
-	/*
-	var links = items
-		.enter()
-
-		.append("a")
-
-		.attr("class", "item")
-		
-		.attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
-		;
-	links
-		.append("div").attr("class", "thumbnail")
-		.append("img").attr("src", function(d){ return "images/"+d.image; })
-		;
-	links
-		.append("div").attr("class", "blurb")
-		.append("div").attr("class", "container")
-		.text(function(d){ return d.blurb; })
-		;
-	*/
-
-
-/*
-		<div class="item">
-		  <div class="aspect">
-		    <div class="image">
-		    </div>
-		    <div class="container-abs">
-		      <div class="container-table">
-		        <div class="container-cell">
-		          text
-		        </div>
-		      </div>    
-		    </div>
-		  </div>
-		</div>
-*/
 	items = 
 		items.enter()
 		.append("a").attr("class", "item")
@@ -121,19 +66,14 @@ function makeitems(){
 	$(".item").hover(
 		// mouseenter
 		function(){
-			
-			//$(this).find(".container-cell").css("opacity", "1");
 			$(this).find(".container-cell").removeClass("hide");
-
 		},
 		// mouseleave
 		function(){
-			
-			//$(this).find(".container-cell").css("opacity", "0");
 			$(this).find(".container-cell").addClass("hide");
-
 		}
 	);
+
 
 }
 

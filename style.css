@@ -115,7 +115,6 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	/*width: 400px;*/
 	max-width: 95%;
 	color: white;
 	background: black;
@@ -209,27 +208,11 @@ body {
 
 
 .workbody {
-	/*background: rgba(0,0,0, .85);*/
 	padding-left: 30px;
 	padding-right: 30px;
 }
 .workbody .content {
-
-
-	/*
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	margin-bottom: 40px;
-	position: relative;
-	padding: 40px;
-	max-width: 860px;
-	padding-bottom: 200px;
-	padding-top: 80px;
-	*/
 	width: 100%;
-	/*background-color: red;*/
 	position: relative;
 	text-align: center;
 	max-width: 1400px;
@@ -239,48 +222,26 @@ body {
 
 }
 .item {
-
-
-	/*
 	width: 404px;
 	max-width: 100%;
 	display: inline-block;
 	position: relative;
-	*/
-	width: 404px;
-	max-width: 100%;
-	/*background: yellow;*/
-	display: inline-block;
-	position: relative;
-
-
 }
 .aspect {
 	padding-bottom: 77.5%;
 	position: relative;
 	margin: 2px;
 }
-
-
 .item.dummy {
 	visibility: hidden;
 	vertical-align: top;
 }
-
-
-/*
-.thumbnail {
-	position: absolute;
-}
-*/
 .image {
-	/*background-image: url(http://jlview.com/images/oysters_th.jpg);*/
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	/*background-size: cover;*/
 }
 .container-abs {
 	position: absolute;
@@ -288,7 +249,6 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	/*background: rgba(0,255,0, .2);*/
 }
 .container-table {
 	display: table;
@@ -310,48 +270,8 @@ body {
 .container-cell.hide {
 	opacity: 0;
 }
-
-
-
-
 .item img {
 	width: 100%;
-}
-.blurb {
-	width: 100%;
-	display: inline-block;
-    font-size: 14px;
-    /*color: rgba(0,0,0, .7);*/
-    color: white;
-    background: rgba(0,0,0, .6);
-    position: absolute;
-    bottom: 0;
-    opacity: 1;
-    transition: .2s;
-
-
-
-    font-size: 14px;
-    background: rgba(0,0,0, .6);
-    transition: .2s;
-    display: table;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-
-
-}
-.blurb .container {
-	margin: 4px;
-	margin-bottom: 11px;
-	margin-top: 13px;
-	margin-left: 13px;
-
-
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-
 }
 
 
