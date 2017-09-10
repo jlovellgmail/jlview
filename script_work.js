@@ -32,13 +32,33 @@ function makeitems(){
 		.selectAll(".item")
 		.data(data)
 		;
+
+
+		/*
 	var insideitems = 
 		items.enter()
-		.append("div").attr("class", "item small")
+		.append("div").attr("class", "item")
 		.append("div").attr("class", "insideitem")
 		;
-	var links = insideitems
-		.append("a").attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
+		*/
+		/*
+	items = 
+		items.enter()
+		.append("div").attr("class", "item")
+		;
+		*/
+
+
+	// var links = insideitems
+	/*
+	var links = items
+		.enter()
+
+		.append("a")
+
+		.attr("class", "item")
+		
+		.attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
 		;
 	links
 		.append("div").attr("class", "thumbnail")
@@ -49,21 +69,71 @@ function makeitems(){
 		.append("div").attr("class", "container")
 		.text(function(d){ return d.blurb; })
 		;
+	*/
+
+
+/*
+		<div class="item">
+		  <div class="aspect">
+		    <div class="image">
+		    </div>
+		    <div class="container-abs">
+		      <div class="container-table">
+		        <div class="container-cell">
+		          text
+		        </div>
+		      </div>    
+		    </div>
+		  </div>
+		</div>
+*/
+	items = 
+		items.enter()
+		.append("a").attr("class", "item")
+		.attr("href", function(d){ return pagename+"?"+keyname+"="+d.query; })
+		;
+	var aspect = 
+		items
+		.append("div").attr("class", "aspect")
+		;
+	aspect
+		.append("div").attr("class", "image")
+		.append("img").attr("src", function(d){ return "images/"+d.image; })
+		;
+	aspect
+		.append("div").attr("class", "container-abs")
+		.append("div").attr("class", "container-table")
+		.append("div").attr("class", "container-cell museo hide")
+		.text(function(d){ return d.blurb; })
+		;
+
+
+
 	
 	// dummy item for alignment
-	/*
-	function isOdd(num) { return num % 2;}
-	if(isOdd(data.length)){
-		var item = 
-			d3.select(".workbody .content")
-			.append("div").attr("class", "item small dummy")
-			;
-	}
-	*/
 	var element = d3.select(".workbody .content");
-	element.append("div").attr("class", "item small dummy");
-	element.append("div").attr("class", "item small dummy");
-	element.append("div").attr("class", "item small dummy");
+	element.append("div").attr("class", "item dummy");
+	element.append("div").attr("class", "item dummy");
+	element.append("div").attr("class", "item dummy");
+
+
+
+	$(".item").hover(
+		// mouseenter
+		function(){
+			
+			//$(this).find(".container-cell").css("opacity", "1");
+			$(this).find(".container-cell").removeClass("hide");
+
+		},
+		// mouseleave
+		function(){
+			
+			//$(this).find(".container-cell").css("opacity", "0");
+			$(this).find(".container-cell").addClass("hide");
+
+		}
+	);
 
 }
 
