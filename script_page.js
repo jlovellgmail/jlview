@@ -210,6 +210,28 @@ function populate() {
 	$(".goright").click(goright);
 
 
+
+
+
+	// create menu
+	var wrap = d3.select(".menu")
+		.append("div").attr("class", "wrap")
+		;
+	wrap
+		.append("div").attr("class", "name tk-aktiv-grotesk")
+		.append("a").attr("href", "/")
+		.text("Jack Lovell")
+		;
+		/*
+	wrap
+		.append("div").attr("class", "tag tk-aktiv-grotesk")
+		.text("Graphic Designer")
+		;
+		*/
+
+
+
+
 }
 
 
