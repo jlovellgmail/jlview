@@ -114,7 +114,10 @@ function setPageViewKeys(){
 			goright();
 		}
 		else if (e.keyCode == 27) { // escape
-		    window.location = "index.html";
+		    
+		    // window.location = "index.html";
+		    window.location = "/";
+		    
 		}
 	});
 }

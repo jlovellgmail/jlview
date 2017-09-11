@@ -28,13 +28,16 @@ function makedata(){
 		var spacermedium = div("spacermedium");
 		var spacersmall = div("spacersmall");
 		contentlist.webdesign = ""
+			+ img("images/page_images/web_landing-page_1800.jpg", "dropshadow")
+			+ caption("Landing page, Virgil James")
+			+ spacer
 			+ img("images/page_images/icons.jpg", "darkenImage")
 			+ caption("App icons, Illumina BaseSpace app store")
 			+ spacer
 			+ '<div class="aspectratio otl"><iframe src="https://player.vimeo.com/video/231601293?autoplay=1&loop=1&autopause=0" width="640" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ div("caption", "Flash website for the film <span class='titleofwork'>Outside The Law</span>")
 			+ spacer
-			+ img("images/page_images/developerstats.jpg")
+			+ img("images/page_images/developer-stats.jpg", "dropshadow")
 			+ caption("Analytics dashboard, Illumina BaseSpace")
 			+ spacer
 			+ '<div class="aspectratio piechart"><iframe src="https://player.vimeo.com/video/168895922?autoplay=1&loop=1&autopause=0" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
@@ -59,16 +62,20 @@ function makedata(){
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
 			+ img("images/page_images/fayum.jpg")
-			+ caption("Scientific Illustration for a publication of The American Museum of Natural History, NYC")
+			+ img("images/page_images/fayum_1800.jpg")
+			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
+			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
 			+ spacer
 			+ img("images/page_images/bentshape.jpg")
 			+ caption("Charcoal on paper")
 			+ spacer
 			+ img("images/page_images/torso.jpg")
 			+ caption("Ink and graphite on paper")
+			/*
 			+ spacer
 			+ img("images/page_images/parabola.jpg")
 			+ caption("Charcoal on paper, 24.7 x 40 inches")
+			*/
 			;
 		contentlist.gp = ""
 			+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
@@ -191,11 +198,11 @@ function makedata(){
 			+ img("images/page_images/oysters2.jpg")
 			;
 		contentlist.other = ""
-			+ img("images/page_images/raytrace.jpg")
-			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
-			+ spacer
 			+ img("images/page_images/shirt_front.jpg")
 			+ caption("MAGA")
+			+ spacer
+			+ img("images/page_images/raytrace.jpg")
+			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
 			;
 		contentlist.rd = ""
 			+ img("images/page_images/keyart_rd_1600.jpg")
@@ -233,6 +240,14 @@ function makedata(){
 			,contentlist.event
 		);
 		add(
+			"th_vj.jpg"
+			,"Visual Design"
+			,"visualdesign"
+			,"Visual Design"
+			,""
+			,contentlist.webdesign
+		);
+		add(
 			"titleist_th.jpg"
 			,"Brochure"
 			,"titleist"
@@ -249,14 +264,6 @@ function makedata(){
 			,contentlist.gp
 		);
 		add(
-			"rd_th.jpg"
-			,"Key Art"
-			,"rd"
-			,"Key Art"
-			,"Film branding"
-			,contentlist.rd
-		);
-		add(
 			"flowers_th.jpg"
 			,"Drawings"
 			,"drawings"
@@ -265,12 +272,12 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			"icons_th.jpg"
-			,"Visual Design"
-			,"visualdesign"
-			,"Visual Design"
-			,""
-			,contentlist.webdesign
+			"rd_th.jpg"
+			,"Key Art"
+			,"rd"
+			,"Key Art"
+			,"Film branding"
+			,contentlist.rd
 		);
 		add(
 			"ad_th.jpg"
@@ -297,7 +304,7 @@ function makedata(){
 			,contentlist.oysters
 		);
 		add(
-			"raytrace_th.jpg"
+			"th_tshirt.jpg"
 			,"Other Projects"
 			,"raytrace"
 			,"Other Projects"
