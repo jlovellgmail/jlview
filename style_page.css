@@ -20,6 +20,7 @@
 	margin-bottom: 30px;
 	margin-top: 7px;
 	font-family: sans-serif;
+	line-height: 22px;
 }
 .pageContent {
 	font-size: 14px;
@@ -37,12 +38,15 @@
 .pageContent p {
     line-height: 18px;
     margin-bottom: 0;
+    letter-spacing: 0.02em;
 }
 .pageContent .heading {
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 0;
 	line-height: 25px;
+	letter-spacing: 0.05em;
+
 }
 .pageContent .spacer {
 	height: 54px;
@@ -77,6 +81,9 @@
 }
 .aspectratio.piechart {
 	padding-bottom: 73.4375%;
+}
+.aspectratio.permissive {
+	padding-bottom: 62.5%;
 }
 .aspectratio iframe {
 	position: absolute;

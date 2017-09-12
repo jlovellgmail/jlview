@@ -1,3 +1,6 @@
-
-.DS_Store
+*.php
+*.jpg
+*.jpeg
+*.png
+*.gif
 .DS_Store

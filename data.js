@@ -175,27 +175,49 @@ function makedata(){
 			;
 		contentlist.oysters = ""
 			+ text("The problem: ", "heading")
-			+ text("Oyster farming, a large industry in Rhode Island, has been damaged by an infectious disease that is drastically reducing populations. But one strain of oyster is immune. Scientists are working to discover what makes these oysters different.")
+			+ text("Oyster farming is a large industry in Rhode Island, but a deadly bacteria periodically kills off oyster populations by up to 90%. However there is one strain of oyster that is immune to the infection, and biologists at The University of Rhode Island are working to discover what makes these oysters different. I had the opportunity to work closely with these researchers to design and build visualization software tools enabling custom explorations of the genetic data produced by their experiments.")
 			+ text("Challenges: ", "heading")
+			
+			/*
 			+ text("When we project data into a readable form, it can look very different depending on how we view it.  For example, one might wish to look at the interrelatedness of specific genes and/or the timing of when certain genes express themselves in the developing oyster. We have to choose a good visual and conceptual projection in order to see features in the data that matter to us.")
+			*/
+			+ text("One big challenge was the size of the data to be visualized. In these networks a node represents a slice of the genome, and an edge represents a relationship between those two slices. The shear interconnectedness of the network, with over 50,000 edges, was so dense that it appeared to be a solid mass.")
+
 			+ spacermedium
-			+ img("images/page_images/oysters_2.jpg")
+			+ img("images/page_images/oysters_network-1.jpg")
+			/*
+			+ img("images/page_images/oysters_network-2.jpg")
+			*/
 			+ spacer
-			+ img("images/page_images/oysters_oysters - Screen shot 2012-09-10 at 3.53.03 AM.jpg")
+			+ "<p>The first version of the tool was named <span style='font-style:italic;'>Permissive</span> because of the extreme number of connections - we chose to use the most permissive thresholds in generating the network. The task was then to create interactive tools that allowed the researchers to \"dissolve\" edges in order to isolate small structures within the network that persisted under certain conditions. These structures would signify a special evolutionary relationship shared by a group of genes.</p>"
 			+ spacer
+			+ '<div class="aspectratio permissive"><iframe src="https://player.vimeo.com/video/233454716?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+			+ spacermedium
+			+ img("images/page_images/oysters_network-2_crop-1.jpg")
+
+			
+
+
+
+			/*
 			+ img("images/page_images/oysters_perspectives.jpg")
 			+ div("caption credit", 'Credit: Emok via <a href="https://commons.wikimedia.org/wiki/File%3AFirst_angle_projection.svg">Wikimedia Commons</a>')
-			+ spacer
+			*/
+			/*
 			+ text("Solution:", "heading")
 			+ text('Software that enabled the researchers to visualize genes as networks of "nodes and edges". The visualization allowed scientists to test their assumptions by "playing" with the networks, in order to reveal structure in the data. The software had to be flexible enough to accommodate yet-unknown forms of data, as the scientists continually restructured their material. As a major benefit, the programs have made it much easier to describe and share the progress of this research in educational settings, with colleagues, across disciplines, and in the scientific literature.')
-			+ spacermedium
+			*/
+
+			+ spacer
 			//+ img("images/page_images/oysters_slider.gif")
 			//+ '<iframe src="https://player.vimeo.com/video/170709062?autoplay=1&amp;loop=1&amp;autopause=0" width="640" height="88" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-			+ img("images/page_images/oysters_4.jpg")
-			+ spacer
-			+ img("images/page_images/oysters1.jpg")
-			+ spacer
+			+ img("images/page_images/oysters_oysters - Screen shot 2012-09-10 at 3.53.03 AM.jpg")
+			+ spacermedium
 			+ img("images/page_images/oysters2.jpg")
+			+ spacermedium
+			+ img("images/page_images/oysters1.jpg")
+			+ spacermedium
+			+ img("images/page_images/oysters_2.jpg")
 			;
 		contentlist.other = ""
 			+ img("images/page_images/shirt_front.jpg")
