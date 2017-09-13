@@ -235,21 +235,21 @@ function makedata(){
 			+ img("images/page_images/oysters_2.jpg")
 			;
 		contentlist.other = ""
-			+ img("images/page_images/shirt_front.jpg")
-			+ caption("MAGA")
-			+ spacer
 			+ img("images/page_images/raytrace.jpg")
 			+ caption("Raytracer written from scratch in C++. Capabilities include soft focus / depth of field blurring, recursive reflections, refraction within transparent objects, texture mapping and antialiasing with spheres and polygons.")
+			+ spacer
+			+ img("images/page_images/shirt_front.jpg")
+			+ caption("MAGA")
 			;
 		contentlist.rd = ""
+			+ img("images/page_images/keyart_vegucated.jpg")
+			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
+			+ spacer
 			+ img("images/page_images/keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
 			+ spacer
 			+ img("images/page_images/keyart_skinnydip.jpg")
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
-			+ spacer
-			+ img("images/page_images/keyart_vegucated.jpg")
-			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Vegucated</span></p>"
 			;
 	}
 
@@ -312,7 +312,10 @@ function makedata(){
 			,contentlist.drawings
 		);
 		add(
-			"rd_th.jpg"
+			
+			//"rd_th.jpg"
+			"th_vegucated.jpg"
+
 			,"Key Art"
 			,"rd"
 			,"Key Art"
@@ -347,7 +350,10 @@ function makedata(){
 			,contentlist.oysters
 		);
 		add(
-			"th_tshirt.jpg"
+			
+			// "th_tshirt.jpg"
+			"th_raytrace.jpg"
+
 			,"Other Projects"
 			,"raytrace"
 			,"Other Projects"
