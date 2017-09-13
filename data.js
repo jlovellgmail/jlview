@@ -7,9 +7,10 @@ function makedata(){
 	var contentlist = {};
 	make_content_list();
 	function make_content_list(){
-		function img(s, classes){
+		function img(s, classes, style){
 			if(!classes) return  "<img src='"+s+"' onclick='blowup(this.src)'>";
-			else return "<img class='"+classes+"' src='"+s+"' onclick='blowup(this.src)'>";
+			else if(!style) return "<img class='"+classes+"' src='"+s+"' onclick='blowup(this.src)'>";
+			else return "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)'>";
 		}
 		function text(s, classes){
 			if(classes != undefined)
@@ -78,23 +79,37 @@ function makedata(){
 			*/
 			;
 		contentlist.gp = ""
+			+ img("images/page_images/gp_eye-170912.jpg")
+			+ spacer
 			+ '<div class="aspectratio horses"><iframe src="https://player.vimeo.com/video/231226964?autoplay=1&loop=1&autopause=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
 			+ spacer
+
+			/*
 			+ '<img class="darkenImage" style="width:600px;" src="images/page_images/gp_targethorse.jpg" onclick="blowup(this.src)">'
-			+ spacer
-			+ img("images/page_images/gp_horse.jpg")
+			*/
+			+ img("images/page_images/gp_horse-170912.jpg")
+			+ spacermedium
+			+ img("images/page_images/gp_targethorse.jpg", "darkenImage", "width:100%;")
 			+ spacermedium
 			+ text("Stochastic process", "heading")
 			+ text("Say we have a photo we want to render called the \"target image\". Genetic computer programs seek to replicate this target image through self-generated experimentation. The program process begins by casting random lines across the digital canvas. Most lines don't come even close to the target, but those that come closest are retained by the program and those which don't are discarded. Now we have a new \"generation\" of information and, based on that information, the program refines its aim to more and more accurately reproduce the target image.")
 			+ text("Just as in nature, creating a rendering of a photograph with this process involves many generations where individuals, and in this case \"lines\", mate to see if they can create an improved offspring. Literally billions of organisms go extinct and only rarely does a beneficial mutation appear. But unlike nature, the computer can do this very quickly.")
 			+ spacermedium
+			+ img("images/page_images/gp_cat-170912.jpg")
+			+ spacermedium
+
+			/*
 			+ '<div class="aspectratio hand"><iframe src="https://player.vimeo.com/video/169456761?autoplay=1&loop=1&autopause=0" width="640" height="760" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="movieOverlay"></div></div>'
-			+ spacer
-			+ img("images/page_images/gp_hand.jpg")
+			*/
+
+			+ img("images/page_images/gp_hand-170912.jpg")
+			/*
 			+ spacer
 			+ img("images/page_images/gp_woman.jpg")
+			*/
+
 			+ spacer
-			+ img("images/page_images/gp_camera.jpg")
+			+ img("images/page_images/gp_camera-170912.jpg")
 			+ spacer
 			+ img("images/page_images/gp_triangles.png")
 			+ spacer
@@ -181,7 +196,7 @@ function makedata(){
 			/*
 			+ text("When we project data into a readable form, it can look very different depending on how we view it.  For example, one might wish to look at the interrelatedness of specific genes and/or the timing of when certain genes express themselves in the developing oyster. We have to choose a good visual and conceptual projection in order to see features in the data that matter to us.")
 			*/
-			+ text("One big challenge was the size of the data to be visualized. In these networks a node represents a slice of the genome, and an edge represents a relationship between those two slices. The shear interconnectedness of the network, with over 50,000 edges, was so dense that it appeared to be a solid mass.")
+			+ text("The first major challenge was the size of the data to be visualized. In these networks a node represents a slice of the genome, and an edge represents a relationship between those two slices. The shear interconnectedness of the network, with over 50,000 edges, was so dense that it appeared to be a solid mass.")
 
 			+ spacermedium
 			+ img("images/page_images/oysters_network-1.jpg")
@@ -278,7 +293,10 @@ function makedata(){
 			,contentlist.titleist
 		);
 		add(
-			"gp_th.jpg"
+			
+			//"gp_th.jpg"
+			"th_gp_camera.jpg"
+
 			,"Experimental Rendering"
 			,"gp"
 			,"Experimental Digital Rendering"
@@ -318,7 +336,10 @@ function makedata(){
 			,contentlist.bags
 		);
 		add(
-			"oysters_th.jpg"
+			
+			//"oysters_th.jpg"
+			"th_oysters_gray.jpg"
+
 			,"Data Visualization"
 			,"oysters"
 			,"Data Visualization"
