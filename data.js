@@ -12,11 +12,20 @@ function makedata(){
 			else if(!style) return "<img class='"+classes+"' src='"+s+"' onclick='blowup(this.src)'>";
 			else return "<img class='"+classes+"' style='"+style+"' src='"+s+"' onclick='blowup(this.src)'>";
 		}
-		function text(s, classes){
+		function text(s, classes, style){
+
+			/*
 			if(classes != undefined)
 				return "<p class='"+classes+"''>"+s+"</p>";
 			else
 				return "<p>"+s+"</p>";
+
+			*/
+			if(!classes) return  "<p>"+s+"</p>";
+			else if(!style) return "<p class='"+classes+"'>"+s+"</p>";
+			else return "<p class='"+classes+"' style='"+style+"'>"+s+"</p>";
+
+
 		}
 		function caption(s){
 			return text(s, "caption");
@@ -138,6 +147,9 @@ function makedata(){
 			+ caption("Exploring line break variations")
 			;
 		contentlist.bags = ""
+			+ text("My role:", " ", "font-weight:bold;")
+			+ text("Designed and executed all aspects including lighting, styling, photography and retouching.", " ", "margin-top:2px;")
+			+ spacer
 			+ img("images/page_images/bags_SFclutch_1800.jpg")
 			+ spacer
 			+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
@@ -247,9 +259,11 @@ function makedata(){
 			+ spacer
 			+ img("images/page_images/keyart_rd_1600.jpg")
 			+ "<p class='caption'>Key art for the documentary film <span style='font-style:italic;'>Racing Dreams</span></p>"
+			/*
 			+ spacer
 			+ img("images/page_images/keyart_skinnydip.jpg")
 			+ "<p class='caption'>Key art for the film <span style='font-style:italic;'>Skinny Dip</span></p>"
+			*/
 			;
 	}
 

@@ -38,7 +38,9 @@
 .pageContent p {
     line-height: 18px;
     margin-bottom: 0;
-    letter-spacing: 0.02em;
+
+    /*letter-spacing: 0.02em;*/
+    
 }
 .pageContent .heading {
 	font-weight: bold;

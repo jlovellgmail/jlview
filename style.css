@@ -326,34 +326,22 @@ body {
 	    padding-bottom: 40px;
 	    padding-top: 30px;
 	}
-	/*
-	.item {
-		padding-bottom: 30px;
+
+	.workbody .aspect {
+		margin-bottom: 23px;
 	}
-	.aspect {
-		padding-bottom: 0;
+	.workbody .container-abs {
+		top: initial;
 	}
-	.image {
-		position: relative;
+	.workbody .container-cell {
+		font-size: 20px;
+		background: rgba(0,0,0, 1);
+		padding: 13px;
 	}
-	.container-abs {
-		position: relative;
-		display: inline-block;
-		width: 100%;
-	}
-	.container-table {
-		height: auto;
-	}
-	.container-cell {
-		font-size: 24px;
-		padding: 20px;
-		opacity: 1;
-		background: rgba(0,0,0, .7);
-	}
-	.container-cell.hide {
+	.workbody .container-cell.hide {
 		opacity: 1;
 	}
-	*/
+
 }
 
 
