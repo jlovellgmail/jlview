@@ -120,11 +120,9 @@
 .goleft, .goright {
 	position: fixed;
 	width: 45px;
-	height: 100%;
-	top: 0;
-	bottom: 0;
+	height: calc(100% - 100px);
+	top: 50px;
 	display: table;
-	cursor: pointer;
 }
 .goleft {
 	left: 0;
@@ -137,6 +135,9 @@
 	text-align: center;
 	padding: 8px;
 	display: table-cell;
+}
+.arrowcontainer {
+	cursor: pointer;
 }
 /*.goleft .cell .arrowcontainer .text, .goright .cell .arrowcontainer .text {*/
 .arrowcontainer .text {
@@ -307,6 +308,11 @@
 		height: auto;
 		/*z-index: 1;*/
 		height: 50px;
+
+
+		top: 0;
+
+
 	}
 	.goleft .cell, .goright .cell {
 		padding: 0;

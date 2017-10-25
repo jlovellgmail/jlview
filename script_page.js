@@ -262,8 +262,8 @@ function populate() {
 	$(".goleft .arrowcontainer, .goright .arrowcontainer").mouseout(function(){
 		$(this).removeClass("rollover");
 	});
-	$(".goleft").click(goleft);
-	$(".goright").click(goright);
+	$(".goleft .arrowcontainer").click(goleft);
+	$(".goright .arrowcontainer").click(goright);
 
 
 
