@@ -201,7 +201,7 @@ function populate() {
 	// previous, next, escape
 
 	function getsplitwords(s){
-		var threshold = 14;
+		var threshold = 13;
 		if(s.length < threshold){
 			return s;
 		}
