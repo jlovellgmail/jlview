@@ -71,8 +71,8 @@ function makedata(){
 			+ img("images/page_images/fallingwater.jpg")
 			+ "<p class='caption'>Rendering executed for an artist<br>Ballpoint pen on paper, 48.3 x 39.9 inches</p>"
 			+ spacer
-			+ img("images/page_images/fayum.jpg")
 			+ img("images/page_images/fayum_1800.jpg")
+			+ img("images/page_images/fayum.jpg")
 			+ "<p class='caption'>Scientific Illustration published by The American Museum of Natural History, NYC<br>Pencil and digital editing</p>"
 			//+ caption("Scientific Illustration published by The American Museum of Natural History, NYC")
 			+ spacer
@@ -152,7 +152,11 @@ function makedata(){
 			+ spacer
 			+ img("images/page_images/bags_SFclutch_1800.jpg")
 			+ spacer
-			+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
+			
+			//+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
+			+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
+
+
 			+ spacer
 			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
 			+ spacer
@@ -283,20 +287,31 @@ function makedata(){
 		}
 		//------------------------------------
 		add(
-			"hersheys_th.jpg"
-			,"Event Graphics"
-			,"event"
-			,"Event Graphics"
-			,""
-			,contentlist.event
-		);
-		add(
 			"th_vj.jpg"
 			,"Visual Design"
 			,"visualdesign"
 			,"Visual Design"
 			,""
 			,contentlist.webdesign
+		);
+		add(
+			
+			// "th_bags.jpg"
+			"th_bags_v2.jpg"
+
+			,"Product Photography"
+			,"bags"
+			,"Product Photography"
+			,"Leather handbags"
+			,contentlist.bags
+		);
+		add(
+			"hersheys_th.jpg"
+			,"Event Graphics"
+			,"event"
+			,"Event Graphics"
+			,""
+			,contentlist.event
 		);
 		add(
 			"titleist_th.jpg"
@@ -343,14 +358,6 @@ function makedata(){
 			,"Ad Campaign"
 			,"Spec ads for Health Warrior"
 			,contentlist.ads
-		);
-		add(
-			"bags_th.jpg"
-			,"Product Photography"
-			,"bags"
-			,"Product Photography"
-			,"Leather handbags"
-			,contentlist.bags
 		);
 		add(
 			
