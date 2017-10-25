@@ -94,16 +94,31 @@ function getProjectIndex(){
 	});
 	return i;	
 }
-function goleft(){
+function getpreviousindex(){
 	var newindex = pi - 1;
 	if(newindex < 0) newindex = data.length - 1;
 	else newindex %= data.length;
-	window.location = pagename+"?"+keyname+"="+data[newindex].query;
+	return newindex;	
+}
+function getnextindex(){
+	var newindex = (pi+1) % data.length;
+	return newindex;
+}
+function goleft(){
+	window.location = pagename+"?"+keyname+"="+data[getpreviousindex()].query;
 }
 function goright(){
-	var newindex = (pi+1) % data.length;
-	window.location = pagename+"?"+keyname+"="+data[newindex].query;
+	window.location = pagename+"?"+keyname+"="+data[getnextindex()].query;
 }
+function getpreviousblurb(){
+	return data[getpreviousindex()].blurb;
+}
+function getnextblurb(){
+	return data[getnextindex()].blurb;
+}
+
+
+
 function setPageViewKeys(){
 	$("body").off("keydown");
 	$("body").keydown(function(e) {
@@ -184,6 +199,40 @@ function populate() {
 
 
 	// previous, next, escape
+
+	function getsplitwords(s){
+		var threshold = 14;
+		if(s.length < threshold){
+			return s;
+		}
+		else {
+			return s.split(" ").join("<br>")
+		}
+	}
+	d3.select(".goleft .cell")
+		.append("div").attr("class", "arrowcontainer tk-aktiv-grotesk")
+		;
+	// arrow first then text
+	d3.select(".goleft .cell .arrowcontainer")
+		.append("div").attr("class", "arrow")
+		.append("img").attr("src", "images/arrow_white_fill.png")
+		;
+	d3.select(".goleft .cell .arrowcontainer")
+		.append("div").attr("class", "text")
+		.html(getsplitwords(getpreviousblurb()))
+		;
+	// text then arrow
+	d3.select(".goright .cell")
+		.append("div").attr("class", "arrowcontainer tk-aktiv-grotesk")
+		.append("div").attr("class", "text")
+		.html(getsplitwords(getnextblurb()))
+		;
+	d3.select(".goright .cell .arrowcontainer")
+		.append("div").attr("class", "arrow")
+		.append("img").attr("src", "images/arrow_white_fill.png")
+		;
+
+	/*
 	d3.selectAll(".goleft .cell, .goright .cell")
 		.append("svg")
 		.attr("class", "arrow")
@@ -200,19 +249,30 @@ function populate() {
 		.append("polygon")
 		.attr("points", "0,1.5 4.5,6 0,10.4 1.6,12 7.6,6 1.6,0 ")
 		;
-	$(".goleft").mouseover(function(){
+	*/
+
+
+
+	$(".goleft .arrowcontainer").mouseover(function(){
 		$(this).addClass("rollover");
 	});
-	$(".goright").mouseover(function(){
+	$(".goright .arrowcontainer").mouseover(function(){
 		$(this).addClass("rollover");
 	});
-	$(".goleft, .goright").mouseout(function(){
+	$(".goleft .arrowcontainer, .goright .arrowcontainer").mouseout(function(){
 		$(this).removeClass("rollover");
 	});
 	$(".goleft").click(goleft);
 	$(".goright").click(goright);
 
 
+
+	/* stop flicker in menu arrows */
+	var imageloader = new Image();
+	imageloader.onload = function () {
+	   $(".menu").css("opacity", "1");
+	}
+	imageloader.src = "images/arrow_white_fill.png";
 
 
 
