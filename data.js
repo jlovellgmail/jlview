@@ -149,16 +149,22 @@ function makedata(){
 		contentlist.bags = ""
 			+ text("My role:", " ", "font-weight:bold;")
 			+ text("Designed and executed all aspects including lighting, styling, photography and retouching.", " ", "margin-top:2px;")
-			+ spacer
-			+ img("images/page_images/bags_SFclutch_1800.jpg")
+
 			+ spacer
 			
 			//+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail_repositioned_1800.jpg")
 			+ img("images/page_images/bags_SF-Overnight---2017-01-27-18.31.41---thumbnail-v2_1800.jpg")
 
-
 			+ spacer
-			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
+			
+			// + img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail_repositioned_1800b.jpg")
+			+ img("images/page_images/bags_SF-Satchel---2017-01-24-23.35.12---thumbnail-v1b_1800.jpg")
+			
+			+ spacer			
+
+			// + img("images/page_images/bags_SFclutch_1800.jpg")
+			+ img("images/page_images/bags_SF-Clutch-v2_1800.jpg")
+
 			+ spacer
 			+ img("images/page_images/bags_grid.jpg", "darkenImage")
 			/*
