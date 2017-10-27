@@ -40,7 +40,11 @@
     margin-bottom: 0;
     
     /*letter-spacing: 0.02em;*/
+    letter-spacing: .01em;
 
+}
+.itemContent {
+	letter-spacing: .01em;
 }
 .pageContent .heading {
 	font-weight: bold;
