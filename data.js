@@ -186,6 +186,15 @@ function makedata(){
 			*/
 			;
 		contentlist.event = ""
+
+			+ text("Hershey's BlogHer Conference Suites 2010", "heading")
+			+ text("Floor-to-ceiling environmental graphics.")
+			+ spacermedium
+			+ img("images/page_images/smores2.jpg")
+			+ spacer
+			+ img("images/page_images/event_forest.jpg")
+			//-------------------------
+			+ spacer
 			+ text("Hershey's Easter Event", "heading")
 			+ text("Step and repeat, kiosks and stage backdrop.")
 			+ spacermedium
@@ -200,11 +209,9 @@ function makedata(){
 			+ img("images/page_images/event_aramark.jpg")
 			//-------------------------
 			+ spacer
-			+ text("Hershey's BlogHer Conference Suites", "heading")
+			+ text("Hershey's BlogHer Conference Suites 2012", "heading")
 			+ text("Floor-to-ceiling environmental graphics.")
 			+ spacermedium
-			+ img("images/page_images/event_forest.jpg")
-			+ spacer
 			+ img("images/page_images/event_perspectivethreewalls.png")
 			+ spacer
 			+ img("images/page_images/event_rightwall.jpg")
@@ -329,7 +336,10 @@ function makedata(){
 			,contentlist.ads
 		);
 		add(
-			"hersheys_th.jpg"
+			
+			//"hersheys_th.jpg"
+			"th_smores.jpg"
+			
 			,"Event Graphics"
 			,"event"
 			,"Event Graphics"
