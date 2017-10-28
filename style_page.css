@@ -164,9 +164,18 @@
 .arrowcontainer .text {
 	display: none;
 }
+
+
+/*
 .goleft .arrow img {
 	transform: rotate(180deg);
 }
+*/
+.goleft .arrow .image {
+	transform: rotate(180deg);
+}
+
+
 .arrow {
 
 	/*
@@ -174,12 +183,29 @@
 	opacity: 0.4;
 	*/
 
+	position: relative;
+	height: 100%;
+
 }
+
+
+/*
 .arrow img {
 	filter: invert(100%);
 	width: 100%;
 	content: url(images/arrow_white.png);
 }
+*/
+
+.arrow .image {
+	filter: invert(100%);
+	background-image: url(images/arrow_white.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
 
 
 .arrowcontainer.rollover {
@@ -278,6 +304,10 @@
 	.arrow {
 		position: absolute;
 		top: 25px;
+
+		width: 28px;
+		height: 52px;
+
 	}
 	.goright .arrow {
 		right: 6px;
@@ -285,9 +315,14 @@
 	.goleft .arrow {
 		left: 6px;
 	}
+
+
+	/*
 	.arrowcontainer .arrow img {
 		width: 28px;
 	}
+	*/
+	
 }
 
 @media screen and (max-width: 1100px) {
@@ -299,6 +334,9 @@
 	}
 	.arrowcontainer {
 		padding: 8px;
+
+		height: 39.28px;
+
 	}
 
 }
@@ -307,6 +345,9 @@
 @media screen and (max-width: 800px) {
 	.goleft, .goright {
 		width: 35px;
+	}
+	.arrowcontainer {
+		height: 21px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -334,6 +375,13 @@
 	.goleft .cell, .goright .cell {
 		padding: 0;
 	}
+	
+
+	.arrowcontainer {
+		height: auto;
+	}
+
+
 	.arrowcontainer .text {
 		color: white;
 		display: inline-block;
@@ -360,13 +408,27 @@
 		position: absolute;
 		top: -7px;
 		height: 60px;
+		width: 39.64px;
 	}
+
+	
+	/*
 	.arrow img {
 		height: 100%;
 		filter: none;
 		width: initial;
 		content: url(images/arrow_white_fill.png);
 	}
+	*/
+	.arrow .image {
+		background-image: url(images/arrow_white_fill.png);
+		filter: none;
+	}
+
+
+
+
+
 	.goright .arrow {
 		right: -9px;
 	}

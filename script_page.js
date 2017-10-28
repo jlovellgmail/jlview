@@ -215,7 +215,10 @@ function populate() {
 	// arrow first then text
 	d3.select(".goleft .cell .arrowcontainer")
 		.append("div").attr("class", "arrow")
-		.append("img").attr("src", "images/arrow_white_fill.png")
+		
+		//.append("img").attr("src", "images/arrow_white_fill.png")
+		.append("div").attr("class", "image")
+
 		;
 	d3.select(".goleft .cell .arrowcontainer")
 		.append("div").attr("class", "text")
@@ -229,7 +232,10 @@ function populate() {
 		;
 	d3.select(".goright .cell .arrowcontainer")
 		.append("div").attr("class", "arrow")
-		.append("img").attr("src", "images/arrow_white_fill.png")
+		
+		//.append("img").attr("src", "images/arrow_white_fill.png")
+		.append("div").attr("class", "image")
+
 		;
 
 	/*
